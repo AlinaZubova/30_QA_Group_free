@@ -1,0 +1,296 @@
+JSON - https://habr.com/ru/post/554274/
+JSON - https://www.w3schools.com/js/js_json_syntax.asp
+https://training.github.com/downloads/ru/github-git-cheat-sheet/
+https://www.atlassian.com/ru/git/tutorials/saving-changes/git-commit
+https://ru.stackoverflow.com/questions/498614/%D0%9A%D0%B0%D0%BA%D0%BE%D0%B2%D0%BE-%D0%BD%D0%B0%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BA%D0%BB%D1%8E%D1%87%D0%B0-u-%D0%BF%D1%80%D0%B8-git-push
+---------------------------------------------
+GIT Homework 1
+
+Для выполнения задания у вас должен быть установлен для Windows - GitBash.
+Создан аккаунт в GitHub
+
+Все шаги сценария выполняйте в терминале GitBush, Terminal, в папке под гитом.
+
+Как отправить ДЗ на проверку.
+ 1. Создайте текстовый файл как в первом ДЗ по Terminal.
+ 2. Сценарий перенесите в этот файл.
+ 3. На против каждого действия - напишите команду в GitBash
+
+Файл со сценарием и ссылку на свой гит хаб отправляйте менторам на проверку.
+-------------------------------------------------------------------------------------------------
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+    $ git clone https://github.com/AlinaZubova/JSON.git
+
+ 6. Внутри локального JSON создать файл “new.json”.
+    touch ./TXT/new.json
+
+ 7. Добавить файл под гит.
+    cd ./JSON/
+    $ git add new.json
+
+ 8. Закоммитить файл.
+    $ git commit -m "add new file json"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+    $ git push https://github.com/AlinaZubova/JSON.git
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+     cat >> new.json
+[
+{
+"Name":"Zubova Alina",
+"City_of_birth":"Born in the last century, in a country and city that no longer exist",
+"Pets":"No pets in the house, only husband and child",
+"Salary":"Salary is never too much, it is enough"
+}
+]
+(ctrl+D) сохранить и выйти
+
+ 11. Отправить изменения на внешний репозиторий.
+     $ git add new.json
+     $ git commit -m "added changes to the file new json"
+     $ git push https://github.com/AlinaZubova/JSON.git
+
+ 12. Создать файл preferences.json
+     $ touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+     cat >> preferences.json
+[
+{
+"Film":"Good detectives",
+"TV Series":"Downton Abbey",
+"Food":"Spaghetti",
+"Season":"Summer",
+"Country":"Australia"
+}
+]
+(ctrl+D) сохранить и выйти
+
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+     cat >> sklls.json
+[
+{
+"Basic_theory":"What is testing",
+"HTTP":"Structures of HTTP Requests and Responses",
+"API testing":"Postman_API autotests",
+"Sniffing http web traffic":"Charles and Fiddler",
+"Dev Tools":"for Chrome Firefox",
+"Mobile testing":"iOS and Android",
+"Command line":"Terminal Linux GitBash",
+"SQL basics":"Select_Join_etc",
+"Postgres database":"installation_configuration and use"
+}
+]
+(ctrl+D) сохранить и выйти
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+     $ git add .
+     $ git commit -m "added 2 files json"
+     $ git push https://github.com/AlinaZubova/JSON.git
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+[
+{
+"ISSUE ID":"5",
+"ISSUE TITLE":"Top and bottom white dash line not visible for size H:546",
+"STATUS":"New",
+"SEVERITY":"High",
+"ISSUE TYPE":"Functional",
+"FREQUENCY":"Every Time",
+"ENVIRONMENT":"Samsung Galaxy s10e",
+"ACTION PERFORMED":"1. Open app. 2.Tap the Add Widget button 3. Tap on the widget, start resizing", 
+"EXPECTED RESULT":"When the widget is resized, the white dash lines along the outline are displayed",
+"ACTUAL RESULT":"When the widget is resized to H:546, the white dashed lines at the top and bottom are not displayed",
+"ADDITIONAL ENVIRONMENT INFO":"Widget on Home screen 4x5",
+"ATTACHMENTS":"Widget_size_H_546.png"
+}
+]
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+     $ git pull https://github.com/AlinaZubova/JSON.git
+
+
+-----------------------------------------------------------------------------------------------------
+
+XML
+ 
+ 21. Создать внешний репозиторий c названием XML.
+ 22. Клонировать репозиторий XML на локальный компьютер.
+     $ git clone https://github.com/AlinaZubova/XML.git
+
+ 23. Внутри локального XML создать файл “new.xml”.
+     touch ./XML/new.xml
+
+ 24. Добавить файл под гит.
+     cd ./XML/
+     git add new.xml
+
+ 25. Закоммитить файл.
+     $ git commit -m "add new.xml file"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+     $ git push https://github.com/AlinaZubova/XML.git
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+     cat >> new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Name>Zubova_Alina</Name>
+<Birthplace>Leningrad</Birthplace>
+<Pets>No_pets</Pets>
+<Salary>Salary_is_never_too_much</Salary>
+
+(ctrl+D) сохранить и выйти
+
+ 28. Отправить изменения на внешний репозиторий.
+     $ git add new.xml
+     $ git commit -m "added changes to the file new xml"
+     $ git push https://github.com/AlinaZubova/XML.git
+
+ 29. Создать файл preferences.xml
+     touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+     cat >> preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Film>Good detectives</Film>
+<TV Series>Downton Abbey</TV Series>
+<Food>Spaghetti</Food>
+<Season>Summe</Season>
+<Country>Australia</Country>
+
+(ctrl+D) сохранить и выйти
+
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+     cat >> sklls.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Basic_theory>What is testing</Basic_theory>
+<HTTPs>Structures of HTTP Requests and Responses</HTTP>
+<API>Postman_API autotests</API>
+<Sniffing>Charles and Fiddler</Sniffing>
+<DevTools>Chrome Firefox</DevTools>
+<MobileTesting>iOS and Android</MobileTesting>
+<CommandLine>Terminal Linux GitBash</CommandLine>
+<SQL>Select_Join_etc</SQL>
+<Postgres>installation_configuration and use</Postgres>
+
+ 32. Сделать коммит в одну строку.
+     $ git add .
+     $ git commit -m "added 2 files xml"
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+     $ git push https://github.com/AlinaZubova/XML.git
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+
+<?xml version="1.0" encoding="UTF-8"?>
+<ISSUE_ID>5</ISSUE_ID>
+<ISSUE_TITLE>Top and bottom white dash line not visible for size H:546</ISSUE_TITLE>
+<STATUS>NEW</STATUS>
+<SEVERITY>High</SEVERITY>
+<DISSUE_TYPE>Functional</DISSUE_TYPE>
+<ENVIRONMENT>Samsung Galaxy s10e Android 12</ENVIRONMENT>
+<ACTION_PERFORMED>1. Open app. 2.Tap the Add Widget button 3. Tap on the widget, start resizing</ACTION_PERFORMED>
+<EXPECTED_RESULT>When the widget is resized, the white dash lines along the outline are displayed</EXPECTED_RESULT>
+<ACTUAL_RESULT>When the widget is resized to H:546, the white dashed lines at the top and bottom are not displayed</ACTUAL_RESULT>
+<ADDITIONAL_ENVIRONMENT_INFO>Home screen Widget 4x5</ADDITIONAL_ENVIRONMENT_INFO>
+<ATTACHMENTS>Widget_size_H_546.png</ATTACHMENTS>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 38. Синхронизировать внешний и локальный репозиторий XML
+     $ git pull https://github.com/AlinaZubova/XML.git
+
+--------------------------------------------------------------------------------------------------------------------
+TXT
+ 1. Создать внешний репозиторий c названием TXT.
+
+ 2. Клонировать репозиторий TXT на локальный компьютер.
+    $ git clone https://github.com/AlinaZubova/TXT.git
+
+ 3. Внутри локального TXT создать файл “new.txt”
+    touch ./TXT/new.txt
+
+ 4. Добавить файл под гит.
+    git add new.txt
+
+ 5. Закоммитить файл.
+    $ git commit -m "add new.txt file"
+
+ 6. Отправить файл на внешний GitHub репозиторий.
+    $ git push https://github.com/AlinaZubova/TXT.git
+
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+    cat >> new.txt
+Zubova Alina
+Born in the last century, in a country and city that no longer exist
+No pets in the house, only husband and child
+Salary is never too much, it is enough
+(ctrl+D) сохранить и выйти
+
+ 8. Отправить изменения на внешний репозиторий.
+    $ git add new.txt
+    $ git commit -m "added text to the new file"
+    $ git push https://github.com/AlinaZubova/TXT.git
+
+ 9. Создать файл preferences.txt
+    touch preferences.txt
+
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+     cat >> preferences.txt
+Film - good detectives
+TV Series - Downton Abbey
+Food - Spaghetti
+Season - summer
+Country - Australia
+(ctrl+D) сохранить и выйти
+
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+     cat >> sklls.txt
+1. Basic theory (What is testing, bug reports, documentation, types, methods, testing directions, etc.) SDLC, STLC.
+2. What is a client-server architecture.
+3. HTTP: Server request methods. HTTP server response codes. Structures of HTTP Requests and Responses
+4. What is JSON, XML. Their structure.
+5. API testing via Postman (JS, API autotests).
+6. Removing and reading logs from an external server.
+7. Sniffing http web traffic via Charles and Fiddler.
+8. Dev Tools of web browsers (Google Chrome, FireFox).
+9. VPN (How it works, why you need it, how to use it, tool options)
+10. Mobile testing: Feature iOS, Android, guidelines. Building iOS applications on Xcode. Building Android Applications with Android Studio
+11. ADB (android device management).
+12. Setting up proxy and vpn on iOS and Android.
+13. Interception (sniffing) of mobile traffic via Charles and Fiddler on iOS and Android.
+14. Command line (terminal) Linux (copying, creating, viewing, moving files on servers without a graphical interface)
+15. Basics of bash scripting, automation of routine tasks on the server.
+16. Access to remote servers.
+17. SQL basics (Create, Delete, Drop, Insert Into, Select, From, Where, Join).
+18. Postgres database (installation, configuration and use).
+19. Non-relational database Redis (installation, configuration and use).
+20. Load testing in Jmeter.
+21. Scrum development methodology.
+
+(ctrl+D) сохранить и выйти
+
+ 12. Сделать коммит в одну строку.
+     $ git add .
+
+ 13. Отправить сразу 2 файла на внешний репозиторий.
+     $ git commit -m "add 2 failes"
+     $ git push https://github.com/AlinaZubova/TXT.git
+
+ 14. На веб интерфейсе создать файл bug_report.txt.
+
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+
+
+
+ 18. Синхронизировать внешний и локальный репозиторий TXT

@@ -1,0 +1,110 @@
+Homework_1_Terminal
+-----------------------------------------------------------------------
+1) pwd (Посмотреть где я)
+
+2) mkdir foldername (Создать папку)
+   mkdir Homework_1 
+
+3) cd foldername (Зайти в папку)  
+   cd Homework_1
+
+4) foldername - (Создать 3 папки)
+   mkdir hw1_fold_1 hw1_fold_2 hw1_fold_3 
+
+5) cd foldername - (Зайти в любоую папку) 
+   cd hw1_folder_1 
+
+6) touch filename - Создать 5 файлов (3 txt, 2 json)
+   touch hw1_file_1.txt hw1_file_2.txt hw1_file_3.txt 
+   touch hw1_file_4.json hw1_file_5.json 
+
+7) mkdir foldername - (Создать 3 папки)
+   mkdir hw1_fold_4 hw1_fold_5 hw1_fold_6 
+
+8) ls -la (покажет в списке скрытые файлы) или ls -l (список без скрытых файлов)
+  (Вывести список содержимого папки)
+
+9) cat filename - (Открыть любой txt файл)
+   cat hw1_file_1.txt 
+
+10) cat >> filename type text + enter - (написать туда что-нибудь, любой текст)
+    cat >> hw1_file_1.txt aaaa bbbb cccc 
+
+11) ctrl+C  (сохранить и выйти)
+
+12) cd .. (Выйти из папки на уровень выше)
+
+13) mv filename directory_name/ - (переместить любые 2 файла, которые вы создали, в любую другую папку)
+    mv hw1_file_1.txt hw1_file_2.txt hw1_fold_1/ 
+
+14) cp filename directory_name/ (скопировать любые 2 файла, которые вы создали, в любую другую папку)
+    cp hw1_file_4.json hw1_fold_4/ 
+    cp hw1_file_5.json hw1_fold_5/ 
+
+15) find (Найти файл по имени)
+    find . -name "filename" (find . -name "hw1_file_5.json" или find . -name "*file*" )
+    find /directory/ -name filename (find /Homework_1/ -name "hw1*")
+
+16) tail -f failname (просмотр файла в режиме реального времени)
+    tail -f hw1_file_1.txt
+
+17) head -(number of lines) filename - вывести несколько первых строк из текстового файла
+    head -2 hw1_file_1.txt
+
+18) tail -(number of lines) filename - вывести несколько последних строк из текстового файла
+    tail -3 hw1_file_1.txt
+
+19) less filename - просмотреть содержимое длинного файла (команда less)
+    less hw1_file_1.txt
+
+20) date - вывести дату и время
+
+=========
+
+Задание *
+1) curl http://162.55.220.72:5005/terminal-hw-request
+Отправить http запрос на сервер http://162.55.220.72:5005/terminal-hw-request
+
+"Task_1": "Send the next URL in terminal: http://162.55.220.72:5005/get_method?name=(set_your_String)&age=(set_your_number)",
+    "result": [
+      "Your_String",
+      "Your_number"
+
+curl "http://162.55.220.72:5005/get_method?name=Alina&age=42"
+
+
+------------------------------------------------------------------------------------------------
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+cat >> hw1_myscript
+-------------------------------------------
+#!/bin/bash
+
+# Go to folder
+cd hw_script
+
+# Create 3 folders
+mkdir hw1_fold_1 hw1_fold_2 hw1_fold_3
+
+# Go to any folder
+cd hw1_fold_1
+
+# Create 5 files (3 txt, 2 json)
+touch hw1_file_1.txt hw1_file_2.txt hw1_file_3.txt 
+touch hw1_file_4.json hw1_file_5.json 
+
+# Create 3 folders
+mkdir hw1_fold_4 hw1_fold_5 hw1_fold_6
+
+# List folder contents
+ls -la
+
+# move any 2 files you created to any other folder
+mv hw1_file_1.txt hw1_fold_4/
+mv hw1_file_2.txt hw1_fold_5/
+
+# finish
+-----------------------------------------------
+chmod ugo+x hw1_myscript - make file executable
+
+./hw1_myscript - run file
